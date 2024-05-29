@@ -4,16 +4,20 @@ function Footer() {
   return (
     <footer className="bg-indigo-600 text-white static bottom-0 w-full">
       <div className="">
-        <div className="grid grid-cols-2 gap-6 items-center">
+        <div className="grid grid-cols-2 items-center">
           {/* Privacy Policy */}
           <div className='text-center'>
-              <h2 className="text-md sm:text-lg font-semibold text-gray-200 uppercase ">Legal</h2>
-              <ul className="text-xs sm:text-sm text-gray-300">
+              <h2 className="text-md sm:text-xl font-semibold text-gray-200 uppercase ">Social</h2>
+              <ul className="text-md sm:text-md text-gray-300">
                 <li className="">
-                <a className="hover:text-white" href="/privacy-policy">Privacy Policy</a>
+                <a href="https://www.linkedin.com/in/charlessergeant/" target="_blank" rel="noopener noreferrer">
+                  <i className="fab fa-linkedin social-icon discord-icon hover:text-white"></i>
+                </a>
                 </li>
                 <li>
-                <a className="hover:text-white" href="/terms-of-service/">Terms of Use</a>
+                  <a href="https://github.com/CharlieSergeant" target="_blank" rel="noopener noreferrer">
+                    <i className="fab fa-github social-icon patreon-icon hover:text-white"></i>
+                  </a>
                 </li>
               </ul>
             </div>
@@ -21,13 +25,13 @@ function Footer() {
           {/* Contact Info */}
 
           <div className='text-center'>
-              <h2 className="text-md sm:text-lg font-semibold text-gray-200 uppercase ">Contact Info</h2>
-              <ul className="text-xs sm:text-sm text-gray-300">
+              <h2 className="text-md sm:text-xl font-semibold text-gray-200 uppercase ">Contact Info</h2>
+              <ul className="text-md sm:text-md text-gray-300">
               <li>
                 <a className="hover:text-white" href="/about/">About</a>
                 </li>
                 <li className="">
-                theedgepredictor@gmail.com
+                charlesdsgt@gmail.com
                 </li>
       
               </ul>
@@ -40,22 +44,13 @@ function Footer() {
 
       {/* Social Media Links */}
     <div className="text-center text-sm space-x-4 pb-1 sm:text-right sm:order-2 sm:pr-2 sm:text-md text-gray-400  ">
-      <a href="https://x.com/jb2bets" target="_blank" rel="noopener noreferrer">
-        <i className="fab fa-twitter social-icon twitter-icon hover:text-white"></i>
-      </a>
-      <a href="https://medium.com/@TheEdgePredictor-" target="_blank" rel="noopener noreferrer">
-        <i className="fab fa-medium social-icon medium-icon hover:text-white"></i>
-      </a>
-      <a href="https://discord.gg/UK5dThHku" target="_blank" rel="noopener noreferrer">
-        <i className="fab fa-discord social-icon discord-icon hover:text-white"></i>
-      </a>
-      <a href="https://www.patreon.com/TheEdgePredictor" target="_blank" rel="noopener noreferrer">
-        <i className="fab fa-patreon social-icon patreon-icon hover:text-white"></i>
-      </a>
+    <a className="hover:text-white" href="/privacy-policy">Privacy Policy</a>
+
+    <a className="hover:text-white" href="/terms-of-service/">Terms of Use</a>
     </div>
           {/* Copyright */}
           <div className="text-center text-xs pb-1 sm:text-left sm:order-1 sm:text-sm sm:pl-2 text-gray-400">
-          <p>&copy; {new Date().getFullYear()} The Edge Predictor. All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} Charles Sergeant</p>
         </div>
 
       

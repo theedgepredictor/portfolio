@@ -14,21 +14,19 @@ function NavBar() {
   };
 
   const navigation  = [
-    { id: 1, name: "Sport", href: "/sport" },
-
+    { id: 1, name: "ABOUT", href: "/about" },
+    { id: 2, name: "PROJECTS", href: "/projects" },
+    { id: 3, name: "EXPERIENCE", href: "/" },
+    { id: 4, name: "RESOURCES", href: "/resources" },
+    { id: 5, name: "BLOG", href: "/projects" },
   ];
 
   return (
     <header className="sticky top-0  z-50">
         <nav className="flex items-center justify-between p-6 lg:px-8 border-b-2" aria-label="Global">
           <div className="flex lg:flex-1">
-            <a href="/" className="-m-1.5 px-3 mr-2">
-              <span className="sr-only">React Template</span>
-              <img
-                className="h-8 w-auto"
-                alt="RT"
-                src={'../../imgs/logo-no-background.png'}
-              />
+            <a href="/" className="-m-1.5 px-3 mr-2 text-gray-900 text-base font-semibold">
+              <span  className="">HOME</span>
             </a>
           </div>
           <div className="flex lg:hidden">
@@ -47,18 +45,10 @@ function NavBar() {
                 {item.name}
               </a>
             ))}
-              <a key={'ABOUT'} href={'/about'} className=" text-md font-semibold leading-6 text-gray-900 text-center">
-                ABOUT
-              </a>
+
           </div>
 
           <div className="hidden lg:flex lg:flex-1 lg:justify-end">
-          <button
-            className="text-md font-semibold leading-6 text-gray-900 focus:outline-none"
-            onClick={handleSubMenuToggle}
-          >
-            <UserCircleIcon className="h-8 w-8 text-gray-700" aria-hidden="true" />
-          </button>
     </div>
 
 
@@ -67,13 +57,8 @@ function NavBar() {
           <div className="fixed inset-0 z-50" />
           <Dialog.Panel className="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
             <div className="flex items-center justify-between">
-              <a href="/" className="-m-1.5 p-1.5">
-                <span className="sr-only">React Template</span>
-                <img
-                  className="h-8 w-auto"
-                  src={'../../imgs/logo-no-background.png'}
-                  alt="RT"
-                />
+            <a href="/" className="-m-1.5 px-3 mr-2 text-gray-900 text-base font-semibold">
+                  <span className="">HOME</span>
               </a>
               <button
                 type="button"
@@ -96,9 +81,6 @@ function NavBar() {
                       {item.name}
                     </a>
                   ))}
-              <a key={'ABOUT'} href={'/about'} className=" -mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">
-                ABOUT
-              </a>
                 </div>
                 </div>
             </div>
